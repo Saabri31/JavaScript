@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+        Realiza una web con un desplegable en el que aparezcan 3 
+        colores, según se seleccione un color del desplegable u 
+        otro se cambiará automáticamente el fondo de la web
+        */
+        function changeBackground(color){
+            document.body.style.background = color;
+        }
+
+    </script>
+    
+</head>
+<body>
+    <select name="colors" id="colors" onclick="changeBackground(value)">
+        <option value="white" >blanco</option>
+        <option value="pink" >rosa</option>
+        <option value="red" >rojo</option>
+        <option value="orange" >naranja</option>
+        <option value="yellow" >amarillo</option>
+        <option value="green" >verde</option>
+        <option value="blue" >azul</option>
+        <option value="purple" >morado</option>
+        <option value="black" >negro</option>
+    </select>
+</body>
+</html>

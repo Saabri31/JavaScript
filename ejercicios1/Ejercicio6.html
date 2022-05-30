@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+    Crea dos casillas input type=”text” para recuperar de ellas el número de filas y 
+    columnas que tendrá una tabla al pulsar un botón “Generar tabla”. La tabla se generará de tal 
+    forma que al entrar en una celda se activa color de fondo amarillo. Si la celda ha sido visitada 
+    el color de fondo de esa celda cuando el ratón no está ya en ella será verde. Si se vuelve a 
+    visitar una celda en la que previamente se ha estado se activa también de amarillo y al salir 
+    también se queda como estaba, verde.
+        */
+        function tabla(){
+            filas = document.getElementById("filas").textContent
+            columnas = document.getElementById("columnas").textContent
+            tabla = document.getElementById("tabla").textContent
+            for(i=0; i<filas; i++){
+                tabla.innerHTML= "<tr>"
+                    for(j=0; j<columnas; j++){
+                        tabla = tabla + "<td></td>"
+                    }
+                    tabla = tabla + "</tr>"
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <input type="text" name="" id="filas"><br>
+    </br>
+    <input type="text" name="" id="columnas"><br>
+    </br>
+    <input type="button" value="Ejecutar" onclick="tabla()"><br>
+    </br>
+    <table id="tabla" border="1px solid black" style="width:20%; text-align: center; line-height: 150%;">
+    </table >
+
+</body>
+</html>

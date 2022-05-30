@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        Realizar los siguientes apartados.
+        a) Pedir al usuario el lado de un cuadrado, mostrar por pantalla el perímetro del mismo 
+        b) Escribir un programa en el cual se ingresen cuatro números, calcular e informar la suma de 
+        los dos primeros y el producto del tercero y el cuarto. 
+        c) Realizar un programa que lea cuatro valores numéricos e informar su suma y producto. 
+        d) Se debe desarrollar un programa que pida el ingreso del precio de un artículo y la cantidad 
+        que lleva el cliente. Mostrar lo que debe abonar el comprador.
+        */
+        let lado = parseInt(prompt("Introduce el lado: "));
+        document.write("Perímetro: " + lado*4 + "<br>");
+
+        var nums = new Array;
+        for(let i = 0; i < 4; i++){
+            nums[i] = parseInt(prompt("Introduce el numero " + (i+1) + ": "));
+        }
+        document.write("La suma de los dos primeros numeros es " + (nums[0] + nums[1]) + "<br>");
+        document.write("El producto de los 2 ultimos numeros es " + (nums[2]*nums[3]) + "<br>");
+
+        for(let i = 0; i < 4; i++){
+            nums[i] = parseInt(prompt("Introduce el numero " + (i+1) + ": "));
+            var suma = 0;
+            suma += nums[i];
+            var producto = 1;
+            producto *= nums[i];
+        }
+        document.write("La suma de los numeros es " + suma + "<br>");
+        document.write("El producto de los numeros es " + producto + "<br>");
+
+        var presio = parseInt(prompt("Introduce el presio: "));
+        var cantidad = parseInt(prompt("Introduce la cantidad: "));
+        document.write("El comprador debe abonar " + (presio*cantidad) + "€<br>");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

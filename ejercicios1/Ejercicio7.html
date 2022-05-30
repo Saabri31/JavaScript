@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+    Realiza una web que tenga un texarea que cuente el número caracteres que el usuario va 
+    escribiendo y se vaya reduciendo en un texto “Puedes escribir hasta x caracteres adicionales” 
+    donde x tiene como valor máximo 100 posibles caracteres.
+        */
+      function getchar(){
+          var element = document.getElementById("textarea");
+          var num = element.value.length;
+        document.write(num);
+      }  
+    </script>
+</head>
+<body>
+    <textarea name="textarea" id="textarea" cols="30" rows="10" onclick="getchar()">hola que tal</textarea>
+</body>
+</html>

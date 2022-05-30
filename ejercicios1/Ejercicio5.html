@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        /*
+    Tenemos un desplegable con cuatro opciones: Texto1, Texto2, Texto3, Texto4 . 
+    Según sea seleccionado un elemento u otro del desplegable aparecerá debajo del desplegable 
+    un párrafo con la palabra Texto1, Texto2…. En formato H1.
+        */
+       function texto(texto){
+           document.getElementById("p_inicial").innerHTML="<h1>" + texto + "</h1>";
+           //document.write("<h1>" + texto + "</h1>");
+       }
+    </script>
+</head>
+<body>
+    <select name="textos" id="textos" onchange="texto(value)">
+        <option selected value="">Selecciona</option>
+        <option value="Texto1">Texto1</option>
+        <option value="Texto2">Texto2</option>
+        <option value="Texto3">Texto3</option>
+        <option value="Texto4">Texto4</option>
+    </select>
+    <p id="p_inicial"></p>
+    </body>
+
+</html>
