@@ -12,11 +12,27 @@
     “Mensaje enviado correctamente con los siguientes datos: nombre, apellido y correo”. Cuando 
     entra en cada casilla del formulario aparecerá de un color diferentes para destacar que está 
     realizándose una inserción.
-
         */
+        window.onload = function(){
+            input = document.getElementsByTagName("input")
+            for(i=0; i < input.length; i++){
+                input[i].onfocus = changeBackground
+            }
+        }
+        function changeBackground(){
+            event.target.style.background = 'red'
+        }
     </script>
 </head>
 <body>
-    
+    <form action="">
+        Nombre: <input type="text"><br>
+    </br>
+        Apellidos: <input type="text"><br>
+    </br>
+        Correo electrónico: <input type="email"><br>
+    </br>
+    <input type="button" name="Enviar consulta" value="Enviar consulta">
+    </form>
 </body>
 </html>
