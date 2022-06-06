@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        /*Realiza un formulario que pida dos coordenadas x,y , y una distancia que queremos mover 
+        ambas coordenadas. Al pulsar en el botón de mover, mostrará las coordenadas x,y después de 
+        sumarle la distancia deseada a cada una de las coordenadas*/
+        //document.write("Coordenada X nueva " + (coordX+distancia))
+        //document.write("Coordenada Y nueva " + (coordY+distancia))
+        function mover (){
+            coordenadaX = document.getElementById("x").value
+            coordenadaY = document.getElementById("y").value
+
+        }
+
+    </script>
+</head>
+<body>
+    <form action="">
+        Introduce la coordenada X: <input type="text" id="x"><br>
+    </br>
+        Introduce la coordenada Y: <input type="text" id="y"><br>
+    </br>
+    Introduce la distancia que quieres mover las coordenadas: <input type="text"><br>
+    </br>
+    <input type="button" name="Mover" id="BotonMover" value="Mover" onclick="mover()">
+    </form>
+    <P></P>
+</body>
+</html>
